@@ -5,15 +5,15 @@ import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 
-@Path("some-coffee")
+@Path("musicians")
 @ApplicationScoped
 public class MusicianResource {
 
     @Inject
-    String barista;
+    String guitarist;
 
     @GET
-    public String getCoffee() {
-        return barista;
+    public String getMusician() {
+        return guitarist;
     }
 }
